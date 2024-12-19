@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+        <div class="logo">Liaohan Wang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Liaohan Wang</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#art" onclick="toggleMenu()">Art</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+
+      </div> 
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container-1">
+            <img src="./assets/profile-pic.jpg" alt="profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Liaohan Wang</h1>
+            <p class="section__text__p2">Data Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact' ">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/liaohan-wang/' ">
+
+                <img src="./assets/github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/liaohan618' ">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me ^_^</h1>
+        <div class="section-container">
+            <div class="section_pic-container-2">
+                <img src="./assets/VR.png" alt="about me pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+years <br /> Data Analyst</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.S. Data Theory <br /> UCLA</p>
+                    </div>
+                
+                    <div class="tool-container">
+                        <p>
+                            <span>Python</span>
+                            <span>R</span>
+                            <span>SQL</span>
+                            <span>Excel</span>
+                            <span>Tableau</span>
+                            <span>AWS</span>
+                            <span>Matlab</span>
+                            <span>LaTex</span>
+                            <span>HTML</span>
+                            <span>css</span>
+                        </p>
+                    </div>
+                    <div class="skill-container">
+                        <p>
+                            <span>Data Analysis</span>
+                            <span>Data Science</span>
+                            <span>Statistics</span>
+                            <span>Mathematics</span>
+                            <span>Modeling</span>
+                            <span>Machine Learning</span>
+                            <span>Web Development</span>
+                            <span>Quality Assurance</span>
+                        </p>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+
+  </body>
+</html>

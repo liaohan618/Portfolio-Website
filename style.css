@@ -1,0 +1,379 @@
+/* general */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85)
+}
+
+/* transition */
+a, 
+.btn {
+    transition: all 300ms ease;
+}
+
+/* navigation */
+nav, 
+.nav-links { /* name, links relation (flex = side by side) */
+    display: flex; 
+}
+
+nav { /* name */
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* hamburger menu */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out; 
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right:0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0,3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: 0;
+}
+
+/* sections */
+.section_pic-container-1 img {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.section_pic-container-2 img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+}
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* profile */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* icons */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1 {
+    border: rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-color-1:hover {
+    cursor: pointer;
+}
+
+/* about */
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*.about-containers, .about-details-container {
+    display: flex;
+}*/
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.tool-container span {
+    display: inline-block; /* Border size matches word */
+    border: 0.1rem solid rgb(53, 53, 53);
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    background: whitesmoke; 
+}
+
+.skill-container span {
+    display: inline-block; /* Border size matches word */
+    border: 0.1rem solid rgb(53, 53, 53);
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    background: white; 
+}
+
+.section-container { /* add space between gap and pic*/
+    gap: 4rem;
+    height: 80%;
+}
+
+/* PROJECTS */
+#projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-details-container {
+    display: flex;
+    justify-content: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.project_pic-container-1 img{
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    margin: auto 0;
+}
+
+/* TWITTER POSTS*/
+.twitter-post {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    padding-left: 20px;
+    margin-left: 60px;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    background-color: #f9f9f9;
+}
+
+.twitter-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.handle {
+    color: gray;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0; /* No extra spacing */
+}
+
+.name-badge {
+    display: flex;
+}
+.badge {
+    width: 10px;
+}
+
+.twitter-content {
+    font-size: 20px;
+}
+.hashtags {
+    color: #1DA1F2; 
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.twitter-image {
+    width: 70%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
