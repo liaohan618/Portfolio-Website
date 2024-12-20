@@ -190,11 +190,9 @@ section {
 .section__text p {
     font-weight: 600;
 }
-
 .section__text__p1 {
     text-align: center;
 }
-
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -288,33 +286,34 @@ section {
     height: 80%;
 }
 
+
 /* PROJECTS */
-#projects {
+/* twitter profile */
+#twitter-profile {
     padding: 2rem;
-    text-align: center;
+    margin-left: 6rem;
 }
 
-.project-container {
+.twitter-profile-header {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
+}
+.profile-header-text {
+    display: flex;
+    flex-direction: column;
+}
+.bio {
+    margin-top: 10px;
+    font-size: 30px;
+}
+/* twitter posts */
+.posts-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; /* Space between posts */
+    justify-content: center; /* Centers posts horizontally */
 }
 
-.project-details-container {
-    display: flex;
-    justify-content: relative;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.project_pic-container-1 img{
-    display: flex;
-    height: 600px;
-    width: 1000px;
-    margin: auto 0;
-}
-
-/* TWITTER POSTS*/
 .twitter-post {
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -376,4 +375,25 @@ section {
     width: 70%;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+
+/* CONTACT */
+.contact-container {
+    display: felx; /* Arrange images in a row */
+    gap: 20px; /* Add spacing between images */
+    justify-content: center; /* Center the images horizontally */
+}
+
+.linkedin-img {
+    width: 50px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    /* Alternatively, you can specify both width and height */
+    /* height: 50px; */
+}
+.github-img {
+    width: 50px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    /* Alternatively, you can specify both width and height */
+    /* height: 50px; */
 }
