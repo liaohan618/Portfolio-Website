@@ -155,9 +155,13 @@ a:hover {
     height: 300px; 
     object-fit: cover; 
 }
+.about-pic img {
+    width: 250px;
+    height: 300px;
+}
 section {
-    padding-top: 4vh;
-    height: 96vh;
+    padding-top: 2vh;
+    height: 50vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -239,25 +243,38 @@ section {
     cursor: pointer;
 }
 
-/* about */
+/* About Me */
 #about {
     position: relative;
 }
 
 .about-containers {
-    gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 .about-details-container {
     justify-content: center;
-    flex-direction: column;
+    font-size: 24px;
+    
 }
 
-/*.about-containers, .about-details-container {
+.about-containers-2 {
+    gap: 4rem; /* between each */
+    margin-bottom: 2rem;
+    margin-top: 20rem;
     display: flex;
-}*/
+    flex-direction: row;
+}
+
+.about-details-container-2 {
+    justify-content: center;
+    font-size: 24px;
+}
+
+.details-container, .details-container-2 {
+    margin-top: 2rem;
+}
 
 .about-pic {
     border-radius: 2rem;
@@ -321,7 +338,7 @@ section {
     padding-left: 20px;
     margin-left: 60px;
     font-family: Arial, sans-serif;
-    max-width: 600px;
+    max-width: 500px;
     background-color: #f9f9f9;
 }
 
