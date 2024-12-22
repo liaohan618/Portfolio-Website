@@ -39,12 +39,21 @@ a:hover {
 
 /* background */
 body {
-    background-color: #65bff6; 
+    font-family: "Poppins", sans-serif;
+}
+
+/*body {
+    background-color: #8de3ff; 
     background-image: url('./assets/cloud.png'); 
-    background-size: 400px 200px; 
-    
+    background-size: 500px 200px; 
     background-repeat: repeat; 
     background-attachment: fixed; 
     background-blend-mode: normal; 
     font-family: Arial, sans-serif;
+}*/
+
+/* art works */
+.art-works img{
+    width: 400px;
+    margin-left: 4rem;
 }
