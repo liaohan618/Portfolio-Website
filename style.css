@@ -217,9 +217,13 @@ section {
 /* icons */
 .icon {
     cursor: pointer;
-    height: 2rem;
+    height: 40px;
 }
 
+.icon-favo {
+    cursor: pointer;
+    height: 100px;
+}
 /* buttons */
 .btn-container {
     display: flex;
