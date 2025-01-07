@@ -145,10 +145,11 @@ a:hover {
 
 /* sections */
 .section_pic-container-1 img {
-    width: 500px; 
-    height: 500px; 
+    width: 300px; 
+    height: 300px; 
     border-radius: 50%; 
     object-fit: cover; 
+    margin-top: 8rem;
 }
 .section_pic-container-2 img {
     width: 300px; 
@@ -217,7 +218,7 @@ section {
 /* icons */
 .icon {
     cursor: pointer;
-    height: 40px;
+    height: 30px;
 }
 
 .icon-favo {
