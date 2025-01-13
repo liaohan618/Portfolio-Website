@@ -154,8 +154,8 @@ a:hover {
     object-fit: cover; 
 }
 .about-pic img {
-    width: 250px;
-    height: 300px;
+    width: 125px;
+    height: 150px;
 }
 section {
     padding-top: 2vh;
@@ -270,7 +270,7 @@ section {
 
 .about-details-container-2 {
     display: flex;
-    padding-top: 300px;
+    padding-top: 100px;
     font-size: 20px;
 }
 .details-text {
@@ -283,9 +283,12 @@ section {
 .dates {
     margin-left: 18px; 
 }
-.details-container, .details-container-2 {
+.details-container {
     margin-top: 2rem;
-    
+    display: flex;
+}
+.details-container-2 {
+    margin-top: 2rem;
 }
 .about-pic {
     border-radius: 2rem;
