@@ -407,6 +407,22 @@ section {
     margin-top: 20px;
     border-radius: 5px;
 }
+.date-location {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.location-info {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+}
+
+.location-icon {
+    width: 25px; 
+    height: 25px; 
+}
 
 
 /* CONTACT */
